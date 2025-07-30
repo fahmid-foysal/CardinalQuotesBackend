@@ -1,0 +1,501 @@
+<!DOCTYPE html> 
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <title>Grandroom BD</title>
+    <!-- Custom CSS -->
+    <link href="assets/libs/flot/css/float-chart.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/style.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .nav-tabs .nav-link {
+            color: #495057;
+            font-weight: 500;
+        }
+        .nav-tabs .nav-link.active {
+            font-weight: bold;
+            color: #0d6efd;
+        }
+        .audio-player {
+            width: 100%;
+            max-width: 300px;
+        }
+        .table-img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+        .tab-pane {
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header" data-logobg="skin5">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon -->
+                        <b class="logo-icon p-l-10">
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <!-- <img src="assets/images/logo-icon.png" alt="homepage" class="light-logo" /> -->
+                        </b>
+                        <!--End Logo icon -->
+                         <!-- Logo text -->
+                        <span class="logo-text">
+                             <!-- dark Logo text -->
+                             <!-- <img src="assets/images/logo-text.png" alt="homepage" class="light-logo" /> -->
+                            <H3 class="text-center p-t-20 p-b-20">Grandroom BD</H3>
+                        </span>
+                    </a>
+                
+                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin5">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav" class="p-t-30">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.php" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="sold_coupon.php" aria-expanded="false"><i class="mdi mdi-ticket"></i><span class="hide-menu">Manage join Event</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage_deposit.php" aria-expanded="false"><i class="mdi mdi-cash"></i><span class="hide-menu">Manage Deposit</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="create_event.php" aria-expanded="false"><i class="mdi mdi-arrow-all"></i><span class="hide-menu">Create Event</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage_announce.php" aria-expanded="false"><i class="mdi mdi-speaker"></i><span class="hide-menu">Annnouncement</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage_prize.php" aria-expanded="false"><i class="mdi mdi-calendar-check"></i><span class="hide-menu">Manage Prize</span></a></li>
+                        <li class="sidebar-item"> 
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" onclick="logout(); return false;" aria-expanded="false">
+                                <i class="mdi mdi-logout"></i>
+                                <span class="hide-menu">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper bg-white">
+            <div class="container mt-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-primary">Audio Management</h4>
+                    <div>
+                        <button class="btn btn-success me-2" onclick="showPopup()">Create New Event</button>
+                        <button class="btn btn-success" onclick="showPopup2()">Upload Cred</button>
+                    </div>
+                </div>
+                
+                <!-- Category Tabs -->
+                <ul class="nav nav-tabs mb-4" id="audioCategoryTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="cardinal-tab" data-bs-toggle="tab" data-bs-target="#cardinal" type="button" role="tab" aria-controls="cardinal" aria-selected="true">Cardinal Sounds</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nature-tab" data-bs-toggle="tab" data-bs-target="#nature" type="button" role="tab" aria-controls="nature" aria-selected="false">Nature Sounds</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="sleeping-tab" data-bs-toggle="tab" data-bs-target="#sleeping" type="button" role="tab" aria-controls="sleeping" aria-selected="false">Sleeping Sounds</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="meditation-tab" data-bs-toggle="tab" data-bs-target="#meditation" type="button" role="tab" aria-controls="meditation" aria-selected="false">Meditation</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="short-meditation-tab" data-bs-toggle="tab" data-bs-target="#short-meditation" type="button" role="tab" aria-controls="short-meditation" aria-selected="false">Short Meditation</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="motivational-tab" data-bs-toggle="tab" data-bs-target="#motivational" type="button" role="tab" aria-controls="motivational" aria-selected="false">Motivational Audios</button>
+                    </li>
+                </ul>
+                
+                <!-- Tab Content -->
+                <div class="tab-content" id="audioCategoryTabContent">
+                    <div class="tab-pane fade show active" id="cardinal" role="tabpanel" aria-labelledby="cardinal-tab">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Image</th>
+                                        <th>Audio</th>
+                                        <th>Keywords</th>
+                                        <th>Views</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cardinalTableBody">
+                                    <!-- Data will be loaded here -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center" id="cardinalPagination">
+                                <!-- Pagination will be loaded here -->
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="nature" role="tabpanel" aria-labelledby="nature-tab">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Image</th>
+                                        <th>Audio</th>
+                                        <th>Keywords</th>
+                                        <th>Views</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="natureTableBody">
+                                    <!-- Data will be loaded here -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center" id="naturePagination">
+                                <!-- Pagination will be loaded here -->
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="sleeping" role="tabpanel" aria-labelledby="sleeping-tab">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Image</th>
+                                        <th>Audio</th>
+                                        <th>Keywords</th>
+                                        <th>Views</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="sleepingTableBody">
+                                    <!-- Data will be loaded here -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center" id="sleepingPagination">
+                                <!-- Pagination will be loaded here -->
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="meditation" role="tabpanel" aria-labelledby="meditation-tab">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Image</th>
+                                        <th>Audio</th>
+                                        <th>Keywords</th>
+                                        <th>Views</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="meditationTableBody">
+                                    <!-- Data will be loaded here -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center" id="meditationPagination">
+                                <!-- Pagination will be loaded here -->
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="short-meditation" role="tabpanel" aria-labelledby="short-meditation-tab">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Image</th>
+                                        <th>Audio</th>
+                                        <th>Keywords</th>
+                                        <th>Views</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="shortMeditationTableBody">
+                                    <!-- Data will be loaded here -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center" id="shortMeditationPagination">
+                                <!-- Pagination will be loaded here -->
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="motivational" role="tabpanel" aria-labelledby="motivational-tab">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Image</th>
+                                        <th>Audio</th>
+                                        <th>Keywords</th>
+                                        <th>Views</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="motivationalTableBody">
+                                    <!-- Data will be loaded here -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center" id="motivationalPagination">
+                                <!-- Pagination will be loaded here -->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <script src="dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
+    <!-- Charts js Files -->
+    <script src="assets/libs/flot/excanvas.js"></script>
+    <script src="assets/libs/flot/jquery.flot.js"></script>
+    <script src="assets/libs/flot/jquery.flot.pie.js"></script>
+    <script src="assets/libs/flot/jquery.flot.time.js"></script>
+    <script src="assets/libs/flot/jquery.flot.stack.js"></script>
+    <script src="assets/libs/flot/jquery.flot.crosshair.js"></script>
+    <script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="dist/js/pages/chart/chart-page-init.js"></script>
+     
+    <script>
+        // Global variables
+        const categories = {
+            'cardinal': 'cardinal_sounds',
+            'nature': 'nature_sounds',
+            'sleeping': 'sleeping_sounds',
+            'meditation': 'meditation',
+            'short-meditation': 'short_meditation',
+            'motivational': 'motivational_audio'
+        };
+        
+        const limit = 10;
+        
+        // Load audios when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize tab events
+            const tabEls = document.querySelectorAll('button[data-bs-toggle="tab"]');
+            tabEls.forEach(tabEl => {
+                tabEl.addEventListener('shown.bs.tab', function(event) {
+                    const target = event.target;
+                    const categoryId = target.getAttribute('aria-controls');
+                    loadCategoryData(categoryId);
+                });
+            });
+            
+            // Load initial data for the first tab
+            loadCategoryData('cardinal');
+        });
+        
+        // Function to load data for a specific category
+        function loadCategoryData(categoryId, page = 1) {
+            const category = categories[categoryId];
+            const tableBody = document.getElementById(`${categoryId}TableBody`);
+            const pagination = document.getElementById(`${categoryId}Pagination`);
+            
+            // Show loading state
+            tableBody.innerHTML = '<tr><td colspan="7" class="text-center">Loading...</td></tr>';
+            
+            // Make API request
+            fetch(`https://cardinaldailyquotes.com/api/audios/${category}?page=${page}&limit=${limit}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log("API response:", data); // Debugging log
+
+                    if (data.status === 'success') {
+                        renderAudioTable(categoryId, data.data);
+
+                        if (data.pagination && typeof data.pagination.pages !== "undefined") {
+                            renderPagination(categoryId, data.pagination, page);
+                        } else {
+                            console.warn("Pagination info missing from API response.");
+                            pagination.innerHTML = ''; // Clear pagination if not available
+                        }
+
+                    } else {
+                        tableBody.innerHTML = '<tr><td colspan="7" class="text-center">No data found</td></tr>';
+                        pagination.innerHTML = '';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    tableBody.innerHTML = '<tr><td colspan="7" class="text-center">Error loading data</td></tr>';
+                    pagination.innerHTML = '';
+                });
+        }
+        
+        // Function to render audio data in table
+        function renderAudioTable(categoryId, audios) {
+            const tableBody = document.getElementById(`${categoryId}TableBody`);
+            
+            if (audios.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="7" class="text-center">No audios found</td></tr>';
+                return;
+            }
+            
+            let html = '';
+            audios.forEach(audio => {
+                html += `
+                    <tr>
+                        <td>${audio.id}</td>
+                        <td>${audio.name}</td>
+                        <td>
+                            ${audio.img_path ? `<img src="${audio.img_path}" alt="${audio.name}" class="table-img">` : 'No Image'}
+                        </td>
+                        <td>
+                            ${audio.audio_path ? `
+                                <audio controls class="audio-player">
+                                    <source src="${audio.audio_path}" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            ` : 'No Audio'}
+                        </td>
+                        <td>
+                            ${audio.keywords && audio.keywords.length > 0 ? 
+                                audio.keywords.join(', ') : 'No Keywords'}
+                        </td>
+                        <td>${audio.view_count || 0}</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary">Edit</button>
+                            <button class="btn btn-sm btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                `;
+            });
+            
+            tableBody.innerHTML = html;
+        }
+        
+        // Function to render pagination
+        function renderPagination(categoryId, pagination, currentPage) {
+            const paginationElement = document.getElementById(`${categoryId}Pagination`);
+            let html = '';
+            
+            if (pagination.pages <= 1) {
+                paginationElement.innerHTML = '';
+                return;
+            }
+            
+            // Previous button
+            html += `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+                        <a class="page-link" href="#" onclick="loadCategoryData('${categoryId}', ${currentPage - 1}); return false;">Previous</a>
+                    </li>`;
+            
+            // Page numbers
+            for (let i = 1; i <= pagination.pages; i++) {
+                html += `<li class="page-item ${i === currentPage ? 'active' : ''}">
+                            <a class="page-link" href="#" onclick="loadCategoryData('${categoryId}', ${i}); return false;">${i}</a>
+                        </li>`;
+            }
+            
+            // Next button
+            html += `<li class="page-item ${currentPage === pagination.pages ? 'disabled' : ''}">
+                        <a class="page-link" href="#" onclick="loadCategoryData('${categoryId}', ${currentPage + 1}); return false;">Next</a>
+                    </li>`;
+            
+            paginationElement.innerHTML = html;
+        }
+        
+        // Placeholder functions for buttons
+        function showPopup() {
+            alert('Create New Event functionality will go here');
+        }
+        
+        function showPopup2() {
+            alert('Upload Cred functionality will go here');
+        }
+        
+        function logout() {
+            // Implement logout functionality
+            alert('Logging out...');
+        }
+    </script>
+</body>
+</html>

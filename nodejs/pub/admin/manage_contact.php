@@ -1,0 +1,211 @@
+<?php
+session_start();
+
+if (!isset($_SESSION["admin_id"])) {
+    header("Location: login.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grandroom BD</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <link href="assets/libs/flot/css/float-chart.css" rel="stylesheet">
+    <link href="dist/css/style.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-wrapper">
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header" data-logobg="skin5">
+                    <a class="navbar-brand" href="index.html">
+                        <span class="logo-text"><h3 class="text-center">GrandRoom BD</h3></span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <aside class="left-sidebar" data-sidebarbg="skin5">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav" class="p-t-30">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.php" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="sold_coupon.php" aria-expanded="false"><i class="mdi mdi-ticket"></i><span class="hide-menu">Manage join Event</span></a></li>
+                       <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage_deposit.php" aria-expanded="false"><i class="mdi mdi-cash"></i><span class="hide-menu">Manage Deposit</span></a></li>
+                        <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="result.php" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Publish Result</span></a></li>   -->
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="create_event.php" aria-expanded="false"><i class="mdi mdi-arrow-all"></i><span class="hide-menu">Create Event</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage_announce.php" aria-expanded="false"><i class="mdi mdi-speaker"></i><span class="hide-menu">Annnouncement</span></a></li>
+                         <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage_deposit_info.php" aria-expanded="false"><i class="mdi mdi-play"></i><span class="hide-menu">Manage deposit info</span></a></li>-->
+                        <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="charts.html" aria-expanded="false"><i class="mdi mdi-pencil"></i><span class="hide-menu">Manage sold coupon</span></a></li>-->
+                        
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage_prize.php" aria-expanded="false"><i class="mdi mdi-calendar-check"></i><span class="hide-menu">Manage Prize</span></a></li>
+                       
+                        <li class="sidebar-item"> 
+                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" onclick="logout(); return false;" aria-expanded="false">
+                            <i class="mdi mdi-logout"></i>
+                            <span class="hide-menu">Logout</span>
+                        </a>
+                        </li>
+
+                      
+                    
+                       
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+
+       <div class="page-wrapper bg-white">
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="text-primary">Available Announcements</h4>
+            <button class="btn btn-success" onclick="showPopup()">Add Announcement</button>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover text-center mx-auto">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Number</th>
+                        <th>Link</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="announcementTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Announcement Modal -->
+<div class="modal fade" id="createAnnouncementModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add Announcement</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="createAnnouncementForm">
+                    <div class="mb-3">
+                        <label class="form-label">Number</label>
+                        <textarea class="form-control" id="text" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Link</label>
+                        <input type="url" class="form-control" id="link">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Publish</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(fetchAnnouncements);
+
+    function fetchAnnouncements() {
+        $.ajax({
+            url: "https://grandroombd.com/api/get_all_contact_info.php",
+            type: "GET",
+            success: function (response) {
+                if (response.status === "success") {
+                    let tableBody = $("#announcementTableBody");
+                    tableBody.empty();
+
+                    response.data.forEach(announcement => {
+                        let row = `
+                            <tr data-announcement-id="${announcement.id}">
+                                <td>${announcement.id}</td>
+                                <td>${announcement.number}</td>
+                                <td>
+                                    ${announcement.link ? `<a href="${announcement.link}" target="_blank">View</a>` : "N/A"}
+                                </td>
+                                <td>
+                                    <button class="btn btn-danger btn-sm" onclick="deleteAnnouncement(${announcement.id})">Delete</button>
+                                </td>
+                            </tr>
+                        `;
+                        tableBody.append(row);
+                    });
+                }
+            },
+            error: function () {
+                console.error("Error fetching announcements.");
+            }
+        });
+    }
+
+    function showPopup() {
+        $('#createAnnouncementModal').modal('show');
+    }
+
+    $("#createAnnouncementForm").submit(function (e) {
+        e.preventDefault();
+
+        let announcementData = {
+            number: $("#text").val().trim(),
+            link: $("#link").val().trim() 
+        };
+
+        $.ajax({
+            url: "https://grandroombd.com/api/create_contact.php",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(announcementData),
+            success: function (response) {
+                if (response.status === "success") {
+                    alert("Announcement added successfully!");
+                    $("#createAnnouncementModal").modal("hide");
+                    fetchAnnouncements();  // ✅ Reload announcements
+                } else {
+                    alert("Error: " + response.message);
+                }
+            },
+            error: function () {
+                alert("Failed to add announcement.");
+            }
+        });
+    });
+
+    function deleteAnnouncement(id) {
+        if (!confirm("Are you sure you want to delete this announcement?")) return;
+
+        $.ajax({
+            url: `https://grandroombd.com/api/delete_contact.php?contact_id=${id}`,
+            type: "DELETE",
+            success: function (response) {
+                if (response.status === "success") {
+                    alert("Announcement deleted successfully!");
+                    fetchAnnouncements();  // ✅ Refresh the table
+                } else {
+                    alert("Error: " + response.message);
+                }
+            },
+            error: function () {
+                alert("Failed to delete announcement.");
+            }
+        });
+    }
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+/home/cardvgut/nodejs/app.js:33
+app.use('/api/uploads', express.static(path.join(__dirname, 'uploads')));
+                                       ^
+
+ReferenceError: path is not defined
+    at Object.<anonymous> (/home/cardvgut/nodejs/app.js:33:40)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+
+Node.js v20.18.3
+/home/cardvgut/nodejs/app.js:33
+app.use('/api/uploads', express.static(path.join(__dirname, 'uploads')));
+                                       ^
+
+ReferenceError: path is not defined
+    at Object.<anonymous> (/home/cardvgut/nodejs/app.js:33:40)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+
+Node.js v20.18.3
+/home/cardvgut/nodejs/app.js:33
+app.use('/api/uploads', express.static(path.join(__dirname, 'uploads')));
+                                       ^
+
+ReferenceError: path is not defined
+    at Object.<anonymous> (/home/cardvgut/nodejs/app.js:33:40)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+
+Node.js v20.18.3
+/home/cardvgut/nodejs/app.js:33
+app.use('/api/uploads', express.static(path.join(__dirname, 'uploads')));
+                                       ^
+
+ReferenceError: path is not defined
+    at Object.<anonymous> (/home/cardvgut/nodejs/app.js:33:40)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+
+Node.js v20.18.3
+/home/cardvgut/nodejs/app.js:33
+app.use('/api/uploads', express.static(path.join(__dirname, 'uploads')));
+                                       ^
+
+ReferenceError: path is not defined
+    at Object.<anonymous> (/home/cardvgut/nodejs/app.js:33:40)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+
+Node.js v20.18.3
+/home/cardvgut/nodejs/app.js:33
+app.use('/api/uploads', express.static(path.join(__dirname, 'uploads')));
+                                       ^
+
+ReferenceError: path is not defined
+    at Object.<anonymous> (/home/cardvgut/nodejs/app.js:33:40)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+
+Node.js v20.18.3
+/home/cardvgut/nodejs/app.js:33
+app.use('/api/uploads', express.static(path.join(__dirname, 'uploads')));
+                                       ^
+
+ReferenceError: path is not defined
+    at Object.<anonymous> (/home/cardvgut/nodejs/app.js:33:40)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+
+Node.js v20.18.3
+TypeError: Cannot read properties of undefined (reading 'note_id')
+    at editNotes (/home/cardvgut/nodejs/api/users/user.controller.js:231:28)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+    at /home/cardvgut/nodejs/middleware/auth.js:39:21
+    at /home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:261:12
+    at getSecret (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:101:10)
+    at checkUser (/home/cardvgut/nodejs/middleware/auth.js:31:17)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+TypeError: Cannot read properties of undefined (reading 'note_id')
+    at editNotes (/home/cardvgut/nodejs/api/users/user.controller.js:231:28)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+    at /home/cardvgut/nodejs/middleware/auth.js:39:21
+    at /home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:261:12
+    at getSecret (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:101:10)
+    at checkUser (/home/cardvgut/nodejs/middleware/auth.js:31:17)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+TypeError: Cannot read properties of undefined (reading 'item')
+    at editViews (/home/cardvgut/nodejs/api/users/user.controller.js:327:25)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+    at middleware (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'item')
+    at editViews (/home/cardvgut/nodejs/api/users/user.controller.js:327:25)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+    at middleware (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+ReferenceError: sql is not defined
+    at updateView (/home/cardvgut/nodejs/api/users/user.service.js:205:24)
+    at editViews (/home/cardvgut/nodejs/api/users/user.controller.js:334:9)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+    at middleware (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'password')
+    at createUser (/home/cardvgut/nodejs/api/users/user.controller.js:11:15)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:295:15
+    at processParams (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:582:12)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:186:3)
+TypeError: Cannot read properties of undefined (reading 'password')
+    at createUser (/home/cardvgut/nodejs/api/users/user.controller.js:11:15)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:295:15
+    at processParams (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:582:12)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:186:3)
+TypeError: Cannot read properties of undefined (reading 'password')
+    at createUser (/home/cardvgut/nodejs/api/users/user.controller.js:11:15)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:295:15
+    at processParams (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:582:12)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:186:3)
+TypeError: Cannot read properties of undefined (reading 'password')
+    at createUser (/home/cardvgut/nodejs/api/users/user.controller.js:11:15)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:295:15
+    at processParams (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:582:12)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:186:3)
+TypeError: Cannot read properties of undefined (reading 'password')
+    at createUser (/home/cardvgut/nodejs/api/users/user.controller.js:11:15)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:295:15
+    at processParams (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:582:12)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:186:3)
+TypeError: Cannot read properties of undefined (reading 'password')
+    at createUser (/home/cardvgut/nodejs/api/users/user.controller.js:11:15)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:295:15
+    at processParams (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:582:12)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/index.js:186:3)
+/home/cardvgut/nodejs/api/users/user.controller.js:321
+          editViews: (req, res) => {
+          ^^^^^^^^^
+
+SyntaxError: Unexpected identifier 'editViews'
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/cardvgut/nodejs/api/users/user.router.js:1:137)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+
+Node.js v20.18.3
+/home/cardvgut/nodejs/api/users/user.controller.js:321
+          editViews: (req, res) => {
+          ^^^^^^^^^
+
+SyntaxError: Unexpected identifier 'editViews'
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/cardvgut/nodejs/api/users/user.router.js:1:137)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+
+Node.js v20.18.3
+/home/cardvgut/nodejs/api/users/user.controller.js:321
+          editViews: (req, res) => {
+          ^^^^^^^^^
+
+SyntaxError: Unexpected identifier 'editViews'
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/cardvgut/nodejs/api/users/user.router.js:1:137)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+
+Node.js v20.18.3
+/home/cardvgut/nodejs/api/users/user.controller.js:321
+          editViews: (req, res) => {
+          ^^^^^^^^^
+
+SyntaxError: Unexpected identifier 'editViews'
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/cardvgut/nodejs/api/users/user.router.js:1:137)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+
+Node.js v20.18.3
+/home/cardvgut/nodejs/api/users/user.controller.js:321
+          editViews: (req, res) => {
+          ^^^^^^^^^
+
+SyntaxError: Unexpected identifier 'editViews'
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/cardvgut/nodejs/api/users/user.router.js:1:137)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+
+Node.js v20.18.3
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+/home/cardvgut/nodejs/api/admin/admin.router.js:5
+const { checkToken } = require("../../middleware/auth");
+        ^
+
+SyntaxError: Identifier 'checkToken' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/cardvgut/nodejs/app.js:17:21)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+
+Node.js v20.18.3
+/home/cardvgut/nodejs/api/admin/admin.router.js:5
+const { checkToken } = require("../../middleware/auth");
+        ^
+
+SyntaxError: Identifier 'checkToken' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/cardvgut/nodejs/app.js:17:21)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+
+Node.js v20.18.3
+/home/cardvgut/nodejs/api/admin/admin.router.js:5
+const { checkToken } = require("../../middleware/auth");
+        ^
+
+SyntaxError: Identifier 'checkToken' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/cardvgut/nodejs/app.js:17:21)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+
+Node.js v20.18.3
+/home/cardvgut/nodejs/api/admin/admin.router.js:5
+const { checkToken } = require("../../middleware/auth");
+        ^
+
+SyntaxError: Identifier 'checkToken' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/cardvgut/nodejs/app.js:17:21)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+
+Node.js v20.18.3
+ReferenceError: $data is not defined
+    at deleteItem (/home/cardvgut/nodejs/api/admin/admin.service.js:32:13)
+    at deleteData (/home/cardvgut/nodejs/api/admin/admin.controller.js:113:9)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+    at /home/cardvgut/nodejs/middleware/auth.js:16:21
+    at /home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:261:12
+    at getSecret (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:101:10)
+    at checkToken (/home/cardvgut/nodejs/middleware/auth.js:8:17)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+ReferenceError: $data is not defined
+    at deleteItem (/home/cardvgut/nodejs/api/admin/admin.service.js:32:13)
+    at deleteData (/home/cardvgut/nodejs/api/admin/admin.controller.js:113:9)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+    at /home/cardvgut/nodejs/middleware/auth.js:16:21
+    at /home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:261:12
+    at getSecret (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:101:10)
+    at checkToken (/home/cardvgut/nodejs/middleware/auth.js:8:17)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+TypeError: Cannot read properties of undefined (reading 'id')
+    at deleteData (/home/cardvgut/nodejs/api/admin/admin.controller.js:109:26)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)
+    at /home/cardvgut/nodejs/middleware/auth.js:16:21
+    at /home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:261:12
+    at getSecret (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/jsonwebtoken/verify.js:101:10)
+    at checkToken (/home/cardvgut/nodejs/middleware/auth.js:8:17)
+    at Layer.handleRequest (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/cardvgut/nodevenv/nodejs/20/lib/node_modules/router/lib/route.js:157:13)

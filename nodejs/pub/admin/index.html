@@ -1,0 +1,385 @@
+<!DOCTYPE html> 
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <title>Grandroom BD</title>
+    <!-- Custom CSS -->
+    <link href="assets/libs/flot/css/float-chart.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header" data-logobg="skin5">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon -->
+                        <b class="logo-icon p-l-10">
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <!-- <img src="assets/images/logo-icon.png" alt="homepage" class="light-logo" /> -->
+                           
+                        </b>
+                        <!--End Logo icon -->
+                         <!-- Logo text -->
+                        <span class="logo-text">
+                             <!-- dark Logo text -->
+                             <!-- <img src="assets/images/logo-text.png" alt="homepage" class="light-logo" /> -->
+                            <H3 class="text-center p-t-20 p-b-20" >Grandroom BD</H3>
+                        </span>
+                
+                    </a>
+                
+                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin5">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav" class="p-t-30">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.php" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="sold_coupon.php" aria-expanded="false"><i class="mdi mdi-ticket"></i><span class="hide-menu">Manage join Event</span></a></li>
+                       <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage_deposit.php" aria-expanded="false"><i class="mdi mdi-cash"></i><span class="hide-menu">Manage Deposit</span></a></li>
+                        <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="result.php" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Publish Result</span></a></li>   -->
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="create_event.php" aria-expanded="false"><i class="mdi mdi-arrow-all"></i><span class="hide-menu">Create Event</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage_announce.php" aria-expanded="false"><i class="mdi mdi-speaker"></i><span class="hide-menu">Annnouncement</span></a></li>
+                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage_contact.php" aria-expanded="false"><i class="mdi mdi-play"></i><span class="hide-menu">Manage Contactt info</span></a></li>
+                        <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="charts.html" aria-expanded="false"><i class="mdi mdi-pencil"></i><span class="hide-menu">Manage sold coupon</span></a></li>-->
+                        
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="manage_prize.php" aria-expanded="false"><i class="mdi mdi-calendar-check"></i><span class="hide-menu">Manage Prize</span></a></li>
+                       
+                        <li class="sidebar-item"> 
+                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" onclick="logout(); return false;" aria-expanded="false">
+                            <i class="mdi mdi-logout"></i>
+                            <span class="hide-menu">Logout</span>
+                        </a>
+                        </li>
+
+                      
+                    
+                       
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+          
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Sales Cards  -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-2 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
+                                <h6 class="text-white">Dashboard</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-4 col-xlg-3" onclick="window.location.href='sold_coupon.php';">
+                        <div class="card card-hover">
+                            <div class="box bg-success text-center">
+                                <h1 class="font-light text-white"><i class="mdi  mdi-ticket"></i></h1>
+                                <h6 class="text-white">Manage join Event</h6>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Column -->
+                    <div class="col-md-6 col-lg-2 col-xlg-3"  onclick="window.location.href='manage_deposit.php';">
+                        <div class="card card-hover">
+                            <div class="box bg-warning text-center">
+                                <h1 class="font-light text-white"><i class="mdi mdi-cash"></i></h1>
+                                <h6 class="text-white">Manage Deposit</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!--<div class="col-md-6 col-lg-2 col-xlg-3" onclick="window.location.href='result.php';">-->
+                    <!--    <div class="card card-hover">-->
+                    <!--        <div class="box bg-danger text-center">-->
+                    <!--            <h1 class="font-light text-white"><i class="mdi mdi-border-outside"></i></h1>-->
+                    <!--            <h6 class="text-white">Publish Result</h6>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!-- Column -->
+              <div class="col-md-6 col-lg-2 col-xlg-3" onclick="window.location.href='create_event.html';" style="cursor: pointer;">
+                <div class="card card-hover">
+                    <div class="box bg-info text-center">
+                        <h1 class="font-light text-white"><i class="mdi mdi-arrow-all"></i></h1>
+                        <h6 class="text-white">Create Event</h6>
+                    </div>
+                </div>
+            </div>
+
+
+                  
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-4 col-xlg-3" onclick="window.location.href='manage_announce.php';">
+                        <div class="card card-hover">
+                            <div class="box bg-danger text-center">
+                                <h1 class="font-light text-white"><i class="mdi mdi-speaker"></i></h1>
+                                <h6 class="text-white">Announement</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                     <div class="col-md-6 col-lg-2 col-xlg-3" onclick="window.location.href='upload_banner.php';">
+                        <div class="card card-hover">
+                            <div class="box bg-info text-center">
+                                <h1 class="font-light text-white"><i class="mdi mdi-relative-scale"></i></h1>
+                                <h6 class="text-white">Upload Banner</h6>
+                            </div>
+                        </div>
+                    </div> 
+                   
+                
+                    <div class="col-md-6 col-lg-2 col-xlg-3" onclick="window.location.href='manage_contact.php';">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h1 class="font-light text-white"><i class="mdi mdi-pencil"></i></h1>
+                                <h6 class="text-white">Manage contact info</h6>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-2 col-xlg-3" onclick="window.location.href='manage_prize.php';">
+                        <div class="card card-hover">
+                            <div class="box bg-success text-center">
+                                <h1 class="font-light text-white"><i class="mdi mdi-calendar-check"></i></h1>
+                                <h6 class="text-white">Manage Prize</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                 
+                    
+                    
+                </div>
+                <!-- ============================================================== -->
+                <!-- Sales chart -->
+                <!-- ============================================================== -->
+                
+                                    <div class="col-lg-3">
+                                        <div class="row">
+                                       <div class="col-6">
+                                        <div class="bg-dark p-10 text-white text-center">
+                                           <i class="fa fa-user m-b-5 font-16"></i>
+                                           <h5 class="m-b-0 m-t-5" id="totalUsers">0</h5>
+                                           <small class="font-light">Total Users</small>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-6">
+                                        <div class="bg-dark p-10 text-white text-center">
+                                           <i class="fa fa-plus m-b-5 font-16"></i>
+                                           <h5 class="m-b-0 m-t-5" id="totalEvents">0</h5>
+                                           <small class="font-light">Total Events</small>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-6 m-t-15">
+                                        <div class="bg-dark p-10 text-white text-center">
+                                           <i class="fa fa-cart-plus m-b-5 font-16"></i>
+                                           <h5 class="m-b-0 m-t-5" id="totalPending">0</h5>
+                                           <small class="font-light">Pending Deposit</small>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-6 m-t-15">
+                                        <div class="bg-dark p-10 text-white text-center">
+                                           <i class="fa fa-tag m-b-5 font-16"></i>
+                                           <h5 class="m-b-0 m-t-5" id="totalSoldCoupons">0</h5>
+                                           <small class="font-light">Total Coupons Sold</small>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-6 m-t-15">
+                                        <div class="bg-dark p-10 text-white text-center">
+                                           <i class="fa fa-table m-b-5 font-16"></i>
+                                           <h5 class="m-b-0 m-t-5" id="totalRevenue">0</h5>
+                                           <small class="font-light">Total Earn</small>
+                                        </div>
+                                    </div>
+
+                                            <!--<div class="col-6 m-t-15">-->
+                                            <!--    <div class="bg-dark p-10 text-white text-center">-->
+                                            <!--       <i class="fa fa-globe m-b-5 font-16"></i>-->
+                                            <!--       <h5 class="m-b-0 m-t-5">8540</h5>-->
+                                            <!--       <small class="font-light">Total Earn</small>-->
+                                            <!--    </div>-->
+                                            <!--</div>-->
+                                        </div>
+                                    </div>
+                                    <!-- column -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <script src="dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
+    <!-- Charts js Files -->
+    <script src="assets/libs/flot/excanvas.js"></script>
+    <script src="assets/libs/flot/jquery.flot.js"></script>
+    <script src="assets/libs/flot/jquery.flot.pie.js"></script>
+    <script src="assets/libs/flot/jquery.flot.time.js"></script>
+    <script src="assets/libs/flot/jquery.flot.stack.js"></script>
+    <script src="assets/libs/flot/jquery.flot.crosshair.js"></script>
+    <script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="dist/js/pages/chart/chart-page-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+     <script>
+         
+function logout() {
+    if (confirm("Are you sure you want to logout?")) {
+        $.ajax({
+            url: "https://grandroombd.com/api/admin_logout.php",
+            type: "POST",
+            contentType: "application/json",
+            success: function(response) {
+                console.log("Server Response:", response); // ✅ Print server response in console
+
+                if (response.status === "success") {
+                    alert("Logout successful!");
+                    window.location.href = "login.php";
+                } else {
+                    console.error("Logout Error:", response); // ✅ Log error details
+                    alert("Logout failed: " + response.message);
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error("AJAX Logout Error:", {
+                    status: xhr.status, // HTTP status code
+                    statusText: xhr.statusText, // Status text
+                    responseText: xhr.responseText, // Server response
+                    errorThrown: error // JavaScript error message
+                });
+
+                alert("An error occurred while logging out. Please try again.");
+            }
+        });
+    }
+}
+
+
+ async function fetchData() {
+        try {
+            const users = await axios.get('https://www.lotterybdt.com/api/get_total_user.php');
+            document.getElementById("totalUsers").innerText = users.data.total_users || 0;
+
+            const events = await axios.get('https://www.lotterybdt.com/api/total_events.php');
+            document.getElementById("totalEvents").innerText = events.data.total_events || 0;
+
+            const pending = await axios.get('https://www.lotterybdt.com/api/get_total_pending.php');
+            document.getElementById("totalPending").innerText = pending.data.total_pending || 0;
+
+            const soldCoupons = await axios.get('https://www.lotterybdt.com/api/get_total_sold_coupons.php');
+            document.getElementById("totalSoldCoupons").innerText = soldCoupons.data.total_sold_coupons || 0;
+
+            const revenue = await axios.get('https://www.lotterybdt.com/api/total_revenue.php');
+            document.getElementById("totalRevenue").innerText = revenue.data.total_amount || "0.00";
+
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
+    }
+
+    // Fetch data when page loads
+    fetchData();
+
+     </script>
+
+</body>
+
+</html>
